@@ -15,4 +15,5 @@ int main(){
     swap(a,b);
   }
   cout<<gcd(a,b)<<endl;
+  return 0;
 }
