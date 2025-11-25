@@ -1,10 +1,27 @@
 // 題目 3：破解數學家的謎題 (Cracking the Mathematician's Puzzle) - 30分
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    
-    
-    return 0;
+bool isPrime(int n){
+  for(int i=2;i<=n;i++){
+    if(n%i==0&&i!=n){
+      return false;
+    }
+    return true;
+  }
+}
+
+int main(){
+  int n;
+  cin>>n;
+  for(int i=2;i<=n/2;i++){
+    if(isPrime(i)){
+      if(isPrime(n-i)){
+        cout<<i<<" "<<n-i<<endl;
+        break;
+      }
+    }
+  }
+return 0;
 }
