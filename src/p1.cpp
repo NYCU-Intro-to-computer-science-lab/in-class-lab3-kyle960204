@@ -17,6 +17,6 @@ int main() {
     int n;
     cin>>n;
     cout<<factorial(n)<<endl;
-    cout<<sum(n);
+    cout<<sum(n)<<endl;
     return 0;
 }
